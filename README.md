@@ -12,17 +12,17 @@ Checkout [todo.md](./TODO.md) and [simple-online-store.md](./simple-online-store
   <summary>Screenshots</summary>
 
 > Light theme
-> <img src="./Screenshot%202023-07-01%20000300.png">
+> <img src="./readme-asssets/Screenshot%202023-07-01%20000300.png">
 
 ---
 
 > Dark theme
-> <img src="./Screenshot%202023-07-01%20000329.png">
+> <img src="./readme-asssets/Screenshot%202023-07-01%20000329.png">
 
 ---
 
 > Cart View
-> <img src="./Screenshot%202023-07-01%20000429.png"/>
+> <img src="./readme-asssets/Screenshot%202023-07-01%20000429.png"/>
 
 </details>
 

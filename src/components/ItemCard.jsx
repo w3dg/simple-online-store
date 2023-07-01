@@ -6,7 +6,7 @@ import { formatCurrency } from "../utils/formatCurrency";
 import { truncateText } from "../utils/truncateText";
 
 export const ItemCard = ({ image, price, title, description, id }) => {
-  const { cartItems, addCartItem, removeCartItem, getItemQuantity } = useShoppingCart();
+  const { cartItems, addCartItem, removeCartItem, getItemQuantity, removeCartItemAll } = useShoppingCart();
 
   const isInCart = () => !!cartItems.find((item) => item.id === id);
 
@@ -23,10 +23,13 @@ export const ItemCard = ({ image, price, title, description, id }) => {
         <Card.Text>{truncateText(description, 70)}</Card.Text>
 
         {isInCart() ? (
-          <div className="d-flex">
+          <div className="d-flex gap-2">
             <Button onClick={() => addCartItem(id)}>+</Button>
             <span className="fs-3 mx-2 align-items-baseline">{quantity}</span>
             <Button onClick={() => removeCartItem(id)}>-</Button>
+            <Button className="bg-danger" onClick={() => removeCartItemAll(id)}>
+              Remove
+            </Button>
           </div>
         ) : (
           <Button variant="primary" onClick={() => addCartItem(id)}>

@@ -8,7 +8,7 @@ Fake Data From - https://fakestoreapi.com/docs
 - [x] All Products View
 
   - [x] Cards with buttons (resused component)
-  - [ ] Remove Button
+  - [x] Remove Button
 
 - [ ] Products Detail View
 
@@ -19,14 +19,15 @@ Fake Data From - https://fakestoreapi.com/docs
 
   - [x]items cards + counts (resused component)
   - [x] Total Sum
-  - [ ] Place Order Button
-  - [ ] Cancel Order => Clears cart and Total Amount
-  - [ ] See more products link
+  - [x] Cancel Order => Clears cart and Total Amount
+  - [x] See more products link
+  - [x] Place Order Button
 
 - [x] Cards
 
   - [x] picture
   - [x] Add to cart / Remove Button
+  - [x] Remove Button
   - [x] description
   - [x] Price
 
