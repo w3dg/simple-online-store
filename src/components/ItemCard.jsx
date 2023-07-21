@@ -1,11 +1,15 @@
 import { Card, Button } from "react-bootstrap";
 
+import { ItemModal } from "./ItemModal";
+
 import { useShoppingCart } from "../context/ShoppingCartContext";
 
 import { formatCurrency } from "../utils/formatCurrency";
 import { truncateText } from "../utils/truncateText";
 
-export const ItemCard = ({ image, price, title, description, id }) => {
+export const ItemCard = (props) => {
+  const { image, price, title, description, id } = props;
+
   const { cartItems, addCartItem, removeCartItem, getItemQuantity, removeCartItemAll } = useShoppingCart();
 
   const isInCart = () => !!cartItems.find((item) => item.id === id);
@@ -37,6 +41,9 @@ export const ItemCard = ({ image, price, title, description, id }) => {
           </Button>
         )}
       </Card.Body>
+      <Card.Footer className="text-muted">
+        <ItemModal {...props} />
+      </Card.Footer>
     </Card>
   );
 };
